@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .clearfix {
+    clear: both;
+  }
+  .row {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+.header{
+  position: relative;
+}
+
+// Style Login
+@import "../pages/login/_style.scss";
+// Style Navbar
+@import "../layout/navbar/list/_style.scss";
+@import "../layout/navbar/top/_style.scss";
+// Style Analysis
+@import "../pages/analysis/_style.scss";
+@import "../pages/staticcontent/_style.scss";

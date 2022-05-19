@@ -1,0 +1,117 @@
+.login {
+  height: 100vh;
+  position: relative;
+  &__contener {
+    position: absolute;
+    min-height: 400px;
+    background-color: #eeeeee;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+      0 6px 20px 0 rgb(0 0 0 / 19%);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 25px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img{
+        width: 75%;
+        margin: 0 auto;
+    }
+  }
+  &__form {
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      align-items: center;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      background: #000 !important;
+      color: #fff !important;
+      border: 0 !important;
+      border-radius: 0.25rem 0 0 0.25rem !important;
+    }
+  }
+}
+
+.fielddiv {
+  position: relative;
+  height: 45px;
+  margin-bottom: 25px;
+  width: 95%;
+  margin: 15px auto;
+  span {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    height: 100%;
+    width: 45px;
+    left: 0;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    background-color: #000;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+  input{
+    height: 45px;
+    padding-left: 45px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 180px;
+    line-height: 1;
+    padding-top: 20px;
+  }
+}
+
+.buttonfield {
+  text-align: center;
+  margin-top: 25px;
+  button {
+    display: inline-block;
+    width: 148px;
+    height: 42px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #2064ad;
+    color: white;
+    font-size: 14x;
+    font-weight: bold;
+    &:hover{
+        background-color: #000;
+        color: white;
+    }
+  }
+}
+
+.errorfiled {
+  color: red;
+}

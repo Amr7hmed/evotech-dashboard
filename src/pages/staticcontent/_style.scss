@@ -1,0 +1,95 @@
+.staticcontent {
+  min-height: 90vh;
+  max-height: auto;
+  overflow-y: auto;
+  justify-content: space-evenly;
+  &__list,
+  &__forms {
+    justify-content: space-evenly;
+  }
+}
+
+.fielddiv {
+  position: relative;
+  height: 45px;
+  margin-bottom: 25px;
+  width: 300px;
+  margin: 15px auto;
+  span {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    height: 100%;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    background-color: #000;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  span.keyboard {
+    left: 0;
+  }
+  span.edit {
+    left: 300px;
+    border-radius: 0.25rem !important;
+    -webkit-border-radius: 0.25rem !important;
+    -moz-border-radius: 0.25rem !important;
+    -ms-border-radius: 0.25rem !important;
+    -o-border-radius: 0.25rem !important;
+    cursor: pointer;
+    background-color: #2255a1;
+  }
+  span.save{
+    left: 347px;
+    border-radius: 0.25rem !important;
+    -webkit-border-radius: 0.25rem !important;
+    -moz-border-radius: 0.25rem !important;
+    -ms-border-radius: 0.25rem !important;
+    -o-border-radius: 0.25rem !important;
+    cursor: pointer;
+    background-color: #05ac5e;
+  }
+  input {
+    height: 45px;
+    padding-left: 48px;
+    font-size: 16px;
+  }
+  textarea {
+    height: 180px;
+    line-height: 1;
+    padding-top: 20px;
+  }
+}
+
+.buttonfield {
+  text-align: center;
+  margin-top: 25px;
+  button {
+    display: inline-block;
+    width: 148px;
+    height: 42px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #2064ad;
+    color: white;
+    font-size: 14x;
+    font-weight: bold;
+    &:hover {
+      background-color: #000;
+      color: white;
+    }
+  }
+}
+
+.errorfiled {
+  color: red;
+}
