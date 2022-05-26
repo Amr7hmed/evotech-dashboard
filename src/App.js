@@ -6,6 +6,8 @@ import Navbartop from "./layout/navbar/top";
 import NavbarList from "./layout/navbar/list";
 import Analysis from "./pages/analysis";
 import StaticNavbar from "./pages/staticcontent/navbar";
+import PageHeader from "./pages/pageheader";
+import EditPageHeader from "./pages/pageheader/editpageheader";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/" element={<Analysis />} />
             <Route path="/login" element={<Login />} />
             <Route path="/navbar" element={<StaticNavbar />} />
+            <Route path="/pageheader" element={<PageHeader />} />
+            <Route path="/editpageheader/:id" element={<EditPageHeader />} />
 
 
           </Routes>

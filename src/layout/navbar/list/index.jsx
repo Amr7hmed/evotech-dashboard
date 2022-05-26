@@ -137,14 +137,14 @@ function NavbarList() {
           <NavLink
             className="nav-link"
             aria-current="page"
-            to={"/homepage"}
+            to={"/pageheader"}
             onClick={() =>
               visibility === "show"
                 ? setVisibility("hide")
                 : setVisibility("show")
             }
           >
-            Test 1
+            Page Header
           </NavLink>
         </li>
 
